@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="470.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.UsuarioExcluirControle">
+   <children>
+      <Label layoutX="253.0" layoutY="29.0" text="Excluir Usuário">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="54.0" layoutY="148.0" text="Login do Usuário:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="campoLogin" layoutX="221.0" layoutY="151.0" prefWidth="300.0" />
+      <Button layoutX="221.0" layoutY="272.0" mnemonicParsing="false" onAction="#excluirUsuario" prefHeight="40.0" prefWidth="65.0" text="Excluir" />
+      <Button layoutX="457.0" layoutY="272.0" mnemonicParsing="false" onAction="#voltarMenu" prefHeight="40.0" prefWidth="65.0" text="Voltar" />
+   </children>
+</AnchorPane>

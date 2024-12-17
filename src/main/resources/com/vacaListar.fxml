@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="470.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.VacaListarControle">
+   <children>
+      <TableView fx:id="tabelaVacas" layoutX="50.0" layoutY="50.0" prefHeight="300.0" prefWidth="600.0">
+         <columns>
+            <TableColumn fx:id="colunaBrinco" prefWidth="200.0" text="Brinco" />
+            <TableColumn fx:id="colunaNome" prefWidth="200.0" text="Nome" />
+            <TableColumn fx:id="colunaRaca" prefWidth="200.0" text="Raça" />
+         </columns>
+      </TableView>
+      <Button fx:id="botaoVoltar" layoutX="318.0" layoutY="387.0" mnemonicParsing="false" onAction="#voltarMenu" prefHeight="40.0" prefWidth="65.0" text="Voltar" />
+   </children>
+</AnchorPane>

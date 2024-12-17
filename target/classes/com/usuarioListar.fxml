@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="470.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.UsuarioListarControle">
+   <children>
+      <TableView fx:id="tabelaUsuarios" layoutX="50.0" layoutY="50.0" prefHeight="300.0" prefWidth="600.0">
+         <columns>
+            <TableColumn fx:id="colunaLogin" prefWidth="200.0" text="Login">
+               <cellValueFactory>
+                  <PropertyValueFactory property="login" />
+               </cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="colunaNome" prefWidth="200.0" text="Nome">
+               <cellValueFactory>
+                  <PropertyValueFactory property="nome" />
+               </cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="colunaSenha" prefWidth="200.0" text="Senha">
+               <cellValueFactory>
+                  <PropertyValueFactory property="senha" />
+               </cellValueFactory>
+            </TableColumn>
+         </columns>
+      </TableView>
+      <Button layoutX="318.0" layoutY="385.0" mnemonicParsing="false" onAction="#voltarMenu" prefHeight="40.0" prefWidth="65.0" text="Voltar" />
+   </children>
+</AnchorPane>
